@@ -1,5 +1,8 @@
 import builder.GradualMealBuilder;
 import builder.InstantMealBuilder;
+import interpreter.Expression;
+import interpreter.Stringbreaker;
+import interpreter.Word;
 import templatemethod.AbstractPerson;
 import templatemethod.FranzFerdinand;
 import templatemethod.HubertMeier;
@@ -42,9 +45,15 @@ public class Main {
         System.out.println(instantMealBuilder.vorspeise("Leberknedelsuppe").hauptspeise("Schweinsbraten").nachspeise("Himbeereis").build());
         */
 
+        /*Template Method
         AbstractPerson person = new HubertMeier();
         person.printName();
         person = new FranzFerdinand();
-        person.printName();
+        person.printName();*/
+
+        /*Interpreter
+        Expression banane = new Word("Banane!", new Stringbreaker().breakString("Banane!"));
+        banane.interpret();
+        */
     }
 }
