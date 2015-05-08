@@ -1,1 +1,2 @@
-Zum Ausprobieren von Patterns. Bitte jeder auf einem eigenen Branch im entsprechenden Package.
+Zum Ausprobieren von Patterns. Entsprechende Packages sind schon angelegt, bitte jeder einen eigenen Branch, damits übersichtlich bleibt.
+I'm too lazy to give everyone permissions, so go fork yourself.
