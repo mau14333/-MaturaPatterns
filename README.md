@@ -1,2 +1,1 @@
-# -MaturaPatterns
-Zum Ausprobieren
+Zum Ausprobieren von Patterns. Bitte jeder auf einem eigenen Branch im entsprechenden Package.
