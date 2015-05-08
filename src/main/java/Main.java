@@ -1,3 +1,6 @@
+import decorator.IDecoratee;
+import decorator.Tower;
+import decorator.WidthDecorator;
 import observer.Customer;
 import observer.News;
 import observer.Product;
@@ -13,6 +16,7 @@ public class Main {
         /*Strategy
         new Client(new FriendlyGreetingStrategy()).greet();
         new Client(new NormalGreetingStrategy()).greet();*/
+        /*Observer
         Customer herrMeier = new Customer();
         Product billig = new Product("Billiges Ding");
         Product teuer = new Product("teures Ding");
@@ -26,6 +30,11 @@ public class Main {
         billig.setPrice(1.50);
         teuer.setPrice(9.60);
         zeitung.subscribe(herrMeier);
-        zeitung.setHeadline("Herr Meier subscribt zu zeitung!");
+        zeitung.setHeadline("Herr Meier subscribt zu zeitung!");*/
+        IDecoratee tower = new Tower(123);
+        IDecoratee decoratedTower = new WidthDecorator(tower, 25);
+        tower.displayInfo();
+        System.out.println("-----");
+        decoratedTower.displayInfo();
     }
 }
