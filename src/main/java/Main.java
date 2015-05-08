@@ -1,5 +1,6 @@
 import builder.GradualMealBuilder;
 import builder.InstantMealBuilder;
+import factory.AutoFactory;
 import interpreter.Expression;
 import interpreter.Stringbreaker;
 import interpreter.Word;
@@ -55,5 +56,9 @@ public class Main {
         Expression banane = new Word("Banane!", new Stringbreaker().breakString("Banane!"));
         banane.interpret();
         */
+
+        AutoFactory factory = new AutoFactory();
+        factory.createPKW().display();
+        factory.createLKW().display();
     }
 }
