@@ -1,5 +1,8 @@
 import builder.GradualMealBuilder;
 import builder.InstantMealBuilder;
+import templatemethod.AbstractPerson;
+import templatemethod.FranzFerdinand;
+import templatemethod.HubertMeier;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -32,10 +35,16 @@ public class Main {
         System.out.println("-----");
         decoratedTower.displayInfo();*/
 
+        /*Builder
         GradualMealBuilder gradualMealBuilder = new GradualMealBuilder();
         System.out.println(gradualMealBuilder.vorspeise("Nudelsuppe").hauptspeise("Schweinsbraten").nachspeise("Himbeereis").build());
-
         InstantMealBuilder instantMealBuilder = new InstantMealBuilder();
         System.out.println(instantMealBuilder.vorspeise("Leberknedelsuppe").hauptspeise("Schweinsbraten").nachspeise("Himbeereis").build());
+        */
+
+        AbstractPerson person = new HubertMeier();
+        person.printName();
+        person = new FranzFerdinand();
+        person.printName();
     }
 }
