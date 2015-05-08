@@ -1,12 +1,6 @@
-import builder.GradualMealBuilder;
-import builder.InstantMealBuilder;
-import factory.AutoFactory;
-import interpreter.Expression;
-import interpreter.Stringbreaker;
-import interpreter.Word;
-import templatemethod.AbstractPerson;
-import templatemethod.FranzFerdinand;
-import templatemethod.HubertMeier;
+import abstractfactory.AutoFactory;
+import abstractfactory.BlueAutoFactory;
+import abstractfactory.RedAutoFactory;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -57,8 +51,18 @@ public class Main {
         banane.interpret();
         */
 
+        /*Factory
         AutoFactory factory = new AutoFactory();
         factory.createPKW().display();
         factory.createLKW().display();
+        */
+
+        abstractfactory.AutoFactory redFactory = new RedAutoFactory();
+        AutoFactory blueFactory = new BlueAutoFactory();
+        redFactory.createLKW().display();
+        redFactory.createPKW().display();
+        blueFactory.createPKW().display();
+        blueFactory.createLKW().display();
+
     }
 }

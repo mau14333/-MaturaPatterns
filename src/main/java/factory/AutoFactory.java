@@ -5,11 +5,11 @@ package factory;
  */
 public class AutoFactory {
 
-    public PKW createPKW(){
+    public Auto createPKW(){
         return new PKW();
     }
 
-    public LKW createLKW(){
+    public Auto createLKW(){
         return new LKW();
     }
 
