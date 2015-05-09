@@ -1,6 +1,7 @@
 import abstractfactory.AutoFactory;
 import abstractfactory.BlueAutoFactory;
 import abstractfactory.RedAutoFactory;
+import state.Door;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -57,12 +58,17 @@ public class Main {
         factory.createLKW().display();
         */
 
+        /*Abstract Factory
         abstractfactory.AutoFactory redFactory = new RedAutoFactory();
         AutoFactory blueFactory = new BlueAutoFactory();
         redFactory.createLKW().display();
         redFactory.createPKW().display();
         blueFactory.createPKW().display();
-        blueFactory.createLKW().display();
+        blueFactory.createLKW().display();*/
 
+        Door door = new Door();
+        door.close();
+        door.close();
+        door.open();
     }
 }
