@@ -1,6 +1,8 @@
 import abstractfactory.AutoFactory;
 import abstractfactory.BlueAutoFactory;
 import abstractfactory.RedAutoFactory;
+import adapter.Customer;
+import adapter.PaymentAdapter;
 import state.Door;
 import composite.*;
 
@@ -73,7 +75,14 @@ public class Main {
         menu.add(menuItem);
         menu.listSubComposites();
         */
-        
+
+        /* Adapter */
+        Customer customer = new Customer("Daniel Lang", "4242 4242 4242", "123");
+        PaymentAdapter payment = new PaymentAdapter();
+        payment.pay(PaymentAdapter.Providers.PayPal, customer, 12.5f);
+        payment.pay(PaymentAdapter.Providers.Stripe, customer, 7.5f);
+
+        /*  State */
         Door door = new Door();
         door.close();
         door.close();
