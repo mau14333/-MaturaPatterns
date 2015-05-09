@@ -8,7 +8,7 @@ public class AutoFactory {
         if(autoTyp.equals("pkw")) {
             return new PKW();
         }
-        else if(autoType.equals("lkw")) {
+        else if(autoTyp.equals("lkw")) {
             return new LKW();
         }
         else{
