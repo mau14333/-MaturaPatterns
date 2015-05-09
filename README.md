@@ -1,4 +1,4 @@
-Zum Ausprobieren von Patterns. Entsprechende Packages sind schon angelegt, bitte jeder einen eigenen Branch, damits übersichtlich bleibt.
+Zum Ausprobieren von Patterns. Entsprechende Packages sind schon angelegt.   
 I'm too lazy to give everyone permissions, so go fork yourself.
 
 #Design Pattern
