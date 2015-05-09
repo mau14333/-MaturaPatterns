@@ -4,7 +4,7 @@ I'm too lazy to give everyone permissions, so go fork yourself.
 #Design Pattern
 
 * [Abstract Factory](src/main/java/abstractfactory)
-* [Adapter*](src/main/java/adapter)
+* [Adapter](src/main/java/adapter)
 * [Builder](src/main/java/builder)
 * [Command*](src/main/java/command)
 * [Composite](src/main/java/composite)
