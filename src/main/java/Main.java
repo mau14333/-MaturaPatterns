@@ -1,4 +1,4 @@
-import singleton.MySingleton;
+import adapter.*;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -92,11 +92,17 @@ public class Main {
         }*/
 
         // Singleton
-        MySingleton singleton1 = MySingleton.getInstance();
+        /* MySingleton singleton1 = MySingleton.getInstance();
         singleton1.setAnInt(3);
         MySingleton singleton2 = MySingleton.getInstance();
         if(singleton1 == singleton2) System.out.println("singleton 1 equals singleton 2");
         else System.out.println("singleton not correctly implemented");
-        System.out.println("anInt was already set to :" + singleton2.getAnInt());
+        System.out.println("anInt was already set to :" + singleton2.getAnInt()); */
+
+        //Adapter Neu:
+        Customer customer = new Customer("Daniel Lang", "4242 4242 4242", "123");
+        new PayPalAdapter().pay(customer, 12.5f);
+        new StripeAdapter().pay(customer, 7.5f);
+
     }
 }

@@ -10,11 +10,10 @@ We have to the payment providers. Both with their API that has a method to pay. 
 The goal is to call the PaymentAdapter and tell him that a customer wants to pay via Payment or Stripe. And function call will look like this:
 
 ```java
-PaymentAdapter payment = new PaymentAdapter();
 //Paypal
-payment.pay(PaymentAdapter.Providers.PayPal, customer, 12.5f);
+new PayPalAdapter().pay(PaymentAdapter.Providers.PayPal, customer, 12.5f);
 //Stripe
-payment.pay(PaymentAdapter.Providers.Stripe, customer, 7.5f);
+new StripeAdapter().pay(PaymentAdapter.Providers.Stripe, customer, 7.5f);
 
 ```
 
