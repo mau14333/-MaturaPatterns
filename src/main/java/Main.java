@@ -1,5 +1,4 @@
-import iterator.Iterator;
-import iterator.SchoolReport;
+import singleton.MySingleton;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -85,11 +84,19 @@ public class Main {
         door.open();
         */
 
-        // Iterator
+        /*// Iterator
         SchoolReport schoolReport = new SchoolReport(new int[]{3,2,4});
         System.out.println("My grades are: ");
         for(Iterator<Integer> iterator = schoolReport.createIterator(); iterator.hasNext(); iterator.gotoNext()){
             System.out.print(iterator.getCurrent() + ", ");
-        }
+        }*/
+
+        // Singleton
+        MySingleton singleton1 = MySingleton.getInstance();
+        singleton1.setAnInt(3);
+        MySingleton singleton2 = MySingleton.getInstance();
+        if(singleton1 == singleton2) System.out.println("singleton 1 equals singleton 2");
+        else System.out.println("singleton not correctly implemented");
+        System.out.println("anInt was already set to :" + singleton2.getAnInt());
     }
 }
