@@ -13,7 +13,7 @@ I'm too lazy to give everyone permissions, so go fork yourself.
 * [Interpreter](src/main/java/interpreter)
 * [Iterator](src/main/java/iterator)
 * [Observer](src/main/java/observer)
-* [Singleton*](src/main/java/singleton)
+* [Singleton](src/main/java/singleton)
 * [State](src/main/java/state)
 * [Strategy](src/main/java/strategy)
 * [Template Method](src/main/java/template)
