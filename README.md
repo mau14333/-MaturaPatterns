@@ -11,7 +11,7 @@ I'm too lazy to give everyone permissions, so go fork yourself.
 * [Decorator](src/main/java/decorator)
 * [Factory](src/main/java/factory)
 * [Interpreter](src/main/java/interpreter)
-* [Iterator*](src/main/java/iterator)
+* [Iterator](src/main/java/iterator)
 * [Observer](src/main/java/observer)
 * [Singleton*](src/main/java/singleton)
 * [State](src/main/java/state)

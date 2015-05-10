@@ -1,10 +1,5 @@
-import abstractfactory.AutoFactory;
-import abstractfactory.BlueAutoFactory;
-import abstractfactory.RedAutoFactory;
-import adapter.Customer;
-import adapter.PaymentAdapter;
-import state.Door;
-import composite.*;
+import iterator.Iterator;
+import iterator.SchoolReport;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -76,16 +71,25 @@ public class Main {
         menu.listSubComposites();
         */
 
-        /* Adapter */
+        /* //Adapter
         Customer customer = new Customer("Daniel Lang", "4242 4242 4242", "123");
         PaymentAdapter payment = new PaymentAdapter();
         payment.pay(PaymentAdapter.Providers.PayPal, customer, 12.5f);
         payment.pay(PaymentAdapter.Providers.Stripe, customer, 7.5f);
+        */
 
-        /*  State */
+        /*  //State
         Door door = new Door();
         door.close();
         door.close();
         door.open();
+        */
+
+        // Iterator
+        SchoolReport schoolReport = new SchoolReport(new int[]{3,2,4});
+        System.out.println("My grades are: ");
+        for(Iterator<Integer> iterator = schoolReport.createIterator(); iterator.hasNext(); iterator.gotoNext()){
+            System.out.print(iterator.getCurrent() + ", ");
+        }
     }
 }
