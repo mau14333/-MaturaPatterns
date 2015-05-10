@@ -6,7 +6,7 @@ I'm too lazy to give everyone permissions, so go fork yourself.
 * [Abstract Factory](src/main/java/abstractfactory)
 * [Adapter](src/main/java/adapter)
 * [Builder](src/main/java/builder)
-* [Command*](src/main/java/command)
+* [Command](src/main/java/command)
 * [Composite](src/main/java/composite)
 * [Decorator](src/main/java/decorator)
 * [Factory](src/main/java/factory)
@@ -17,8 +17,6 @@ I'm too lazy to give everyone permissions, so go fork yourself.
 * [State](src/main/java/state)
 * [Strategy](src/main/java/strategy)
 * [Template Method](src/main/java/template)
-
-*need to be implemented!
 
 ####Contribute
 To contribute to this project please fork it and send a pull request.
