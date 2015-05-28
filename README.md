@@ -17,6 +17,7 @@ I'm too lazy to give everyone permissions, so go fork yourself.
 * [State](src/main/java/state)
 * [Strategy](src/main/java/strategy)
 * [Template Method](src/main/java/template)
+* [Visitor](src/main/java/visitor)
 
 ####Contribute
 To contribute to this project please fork it and send a pull request.

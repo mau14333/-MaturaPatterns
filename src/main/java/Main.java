@@ -1,4 +1,4 @@
-import adapter.*;
+import visitor.*;
 
 /**
  * Created by Michi on 08.05.2015.
@@ -100,9 +100,20 @@ public class Main {
         System.out.println("anInt was already set to :" + singleton2.getAnInt()); */
 
         //Adapter Neu:
+        /*
         Customer customer = new Customer("Daniel Lang", "4242 4242 4242", "123");
         new PayPalAdapter().pay(customer, 12.5f);
         new StripeAdapter().pay(customer, 7.5f);
+        */
 
+        //Visitor
+        Bike bike = new Bike();
+        Car car = new Car();
+        NameVisitor nameVisitor = new NameVisitor();
+        PsVisitor psVisitor = new PsVisitor();
+        bike.accept(nameVisitor);
+        bike.accept(psVisitor);
+        car.accept(nameVisitor);
+        car.accept(psVisitor);
     }
 }
